@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore Gurulingappa's engineering projects - Jagruthi Women Safety, APK Guard Malware Detector, Ripple Expense Tracker, and more.">
+  <title>Projects | Gurulingappa</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Ambient Radial Glowing Orbs & Background Grid -->
+  <div class="bg-grid-pattern"></div>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">LOADING PROJECTS</div>
+  </div>
+
+  <!-- Sticky Navbar (RSD Style Pill Design) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-container">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <div class="brand-title">GURU<span class="brand-dot-green">.</span></div>
+          <div class="brand-subtitle">CREATIVE DEV</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="achievements.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Certifications</a>
+        <a href="achievements.html#blogs" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="nav-action-icon" title="GitHub">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/gurub-dev" target="_blank" rel="noopener" class="nav-action-icon"
+          title="LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <button class="nav-action-icon theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <svg class="sun-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Projects Section -->
+  <section class="section" style="padding-top: 140px;">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">PORTFOLIO SHOWCASE</span>
+
+        <h2 class="section-title">Projects &amp; Innovation</h2>
+
+        <p class="section-subtitle">
+          A collection of projects built across cybersecurity, IoT, web, and mobile development.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-container reveal">
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
+
+        <button class="filter-btn" data-filter="Cybersecurity">
+          Cybersecurity
+        </button>
+
+        <button class="filter-btn" data-filter="IoT">
+          IoT
+        </button>
+
+        <button class="filter-btn" data-filter="Web">
+          Web
+        </button>
+
+        <button class="filter-btn" data-filter="Android">
+          Android
+        </button>
+
+        <button class="filter-btn" data-filter="Other">
+          Other
+        </button>
+      </div>
+
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-container">
+        <!-- ================= APK GUARD ================= -->
+        <article class="project-card reveal" data-category="Cybersecurity Android">
+
+          <div class="project-image">
+            <img src="assets/projects/apkguard.png" alt="APK Guard"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <span class="project-category">Cybersecurity</span>
+              <span class="project-status">Security</span>
+            </div>
+
+            <h3>APK Guard</h3>
+
+            <p>
+              An Android APK risk analysis and threat reporting system that
+              helps users identify potentially malicious applications before
+              installation.
+            </p>
+
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Android</span>
+              <span>Supabase</span>
+              <span>MobSF</span>
+              <span>React.js</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">
+                GitHub ↗
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- ================= JAGRUTHI ================= -->
+        <article class="project-card reveal" data-category="IoT Android">
+
+          <div class="project-image">
+            <img src="assets/projects/jagruthi.png" alt="Jagruthi"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <span class="project-category">IoT</span>
+              <span class="project-status">Social Impact</span>
+            </div>
+
+            <h3>Jagruthi</h3>
+
+            <p>
+              An intelligent women safety system combining a mobile application
+              and IoT wearable for emergency assistance and communication.
+            </p>
+
+            <div class="project-tags">
+              <span>ESP32</span>
+              <span>GPS</span>
+              <span>GSM</span>
+              <span>LoRa</span>
+              <span>Supabase</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">
+                GitHub
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- ================= RIPPLE ================= -->
+        <article class="project-card reveal" data-category="Web">
+
+          <div class="project-image">
+            <img src="assets/projects/ripple.png" alt="Ripple" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <span class="project-category">Web</span>
+              <span class="project-status">Finance</span>
+            </div>
+
+            <h3>Ripple</h3>
+
+            <p>
+              A simple and intuitive expense tracking web application for
+              recording, organizing, and understanding personal spending.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Google Sheets</span>
+              <span>Apps Script</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">
+                GitHub
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ================= HABIT TRACKER ================= -->
+        <article class="project-card reveal" data-category="Android Other">
+
+          <div class="project-image">
+            <img src="assets/projects/Habittracker.png" alt="Habit Tracker"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <span class="project-category">Mobile</span>
+              <span class="project-status">Productivity</span>
+            </div>
+
+            <h3>Habit Tracker</h3>
+
+            <p>
+              A simple habit and daily target tracking application designed
+              to help users build consistency and monitor their progress.
+            </p>
+
+            <div class="project-tags">
+              <span>Android</span>
+              <span>UI/UX</span>
+              <span>Mobile</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">
+                GitHub
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- ================= NEXORA ================= -->
+        <article class="project-card reveal" data-category="Android Other">
+
+          <div class="project-image">
+            <img src="assets/projects/Nexora.png" alt="Nexora Study Tracker"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <span class="project-category">Android</span>
+              <span class="project-status">Productivity</span>
+            </div>
+
+            <h3>Nexora</h3>
+
+            <p>
+              A modern study tracking application designed to help students plan, track, and achieve their academic goals with interactive dashboards.
+            </p>
+
+            <div class="project-tags">
+              <span>Android</span>
+              <span>UI/UX</span>
+              <span>Java</span>
+              <span>Productivity</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ================= BHOOMITRA ================= -->
+        <article class="project-card reveal" data-category="IoT">
+
+          <div class="project-image">
+            <img src="assets/projects/Bhoomitra.png" alt="Bhoomitra"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <span class="project-category">IoT</span>
+              <span class="project-status">Agriculture</span>
+            </div>
+
+            <h3>Bhoomitra</h3>
+
+            <p>
+              An IoT-based smart agriculture solution designed to support
+              agricultural monitoring and improve farming efficiency.
+            </p>
+
+            <div class="project-tags">
+              <span>IoT</span>
+              <span>Sensors</span>
+              <span>Smart Agriculture</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">
+                GitHub ↗
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-dot"></span> Gurulingappa
+          </a>
+          <p>Computer Science Engineering Student &amp; Full Stack Developer crafting intuitive Apple-grade digital experiences.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/gurulingappa" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/gurulingappa" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Status</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 12px;">🟢 Available for Engineering Internships &amp; Collaborative Projects.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Gurulingappa. Made with ❤️ and Vanilla Web Technologies.</div>
+        <button id="back-to-top" class="back-to-top-btn" title="Back to Top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/project-filter.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>
