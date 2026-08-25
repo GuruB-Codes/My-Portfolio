@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gurulingappa - Computer Science Engineering Student, IoT & AI Enthusiast. Award-winning personal portfolio website.">
+  <meta name="keywords" content="Gurulingappa, Portfolio, IoT Developer, ESP32, Spring Boot, Web Developer, Hackathon Winner">
+  <meta name="author" content="Gurulingappa">
+  <title>Gurulingappa | Award-Winning Portfolio</title>
+  
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Radial Glowing Orbs & Background Grid -->
+  <div class="bg-grid-pattern"></div>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Animated Page Loader -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">GURULINGAPPA</div>
+  </div>
+
+  <!-- Sticky Navbar (RSD Style Pill Design) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-container">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <div class="brand-title">GURU<span class="brand-dot-green">.</span></div>
+          <div class="brand-subtitle">CREATIVE DEV</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="achievements.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Certifications</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="nav-action-icon" title="GitHub">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/gurub-dev" target="_blank" rel="noopener" class="nav-action-icon" title="LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <button class="nav-action-icon theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <svg class="sun-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (RSD Centered Design) -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-centered-content">
+        <!-- Status Pill Badge -->
+        <div class="availability-badge reveal">
+          <span class="status-pulse-dot"></span> Available for opportunities
+        </div>
+
+        <!-- Main Title & Mint Name -->
+        <h1 class="hero-greeting-title reveal">Hi, I'm</h1>
+        <h2 class="hero-name-mint reveal">Gurulingappa</h2>
+        
+        <!-- Role Typewriter Line -->
+        <div class="hero-typing-wrapper reveal">
+          <span id="typing-text"></span>
+          <span class="typing-cursor"></span>
+        </div>
+
+        <!-- Action Bar & CTA Buttons -->
+        <div class="hero-action-bar reveal">
+          <div class="scroll-explore-text">Scroll to explore</div>
+          <div class="hero-button-row">
+            <a href="projects.html" class="btn btn-primary-mint btn-magnetic">
+              View Projects
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="assets/Gurulingappa_CSE.pdf" target="_blank" class="btn btn-resume-card btn-magnetic">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              View Resume
+            </a>
+            <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="hero-link-btn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/gurub-dev" target="_blank" rel="noopener" class="hero-link-btn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Animated Counters Banner -->
+      <div class="stats-banner glass-card reveal-zoom delay-2" style="margin-top: 50px;">
+        <div class="stat-item">
+          <div class="stat-number counter-value" data-target="3">0</div>
+          <div class="stat-label">Hackathons Won 🏆</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number counter-value" data-target="7">0</div>
+          <div class="stat-label">Projects Built 🚀</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number counter-value" data-target="10">0</div>
+          <div class="stat-label">Certificates Earned 📜</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number counter-value" data-target="120">0</div>
+          <div class="stat-label">GitHub Contribs ⭐</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Expertise Section -->
+  <section id="expertise" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Technical <span style="color: #00d26a;">Expertise</span></h2>
+        <p class="section-subtitle">Full-stack proficiency with deep expertise in distributed systems and cloud architecture</p>
+      </div>
+
+      <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: 40px; gap: 20px;">
+        <!-- Frontend -->
+        <div class="glass-card reveal-left" style="display: flex; flex-direction: column; padding: 25px;">
+          <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <div style="background: rgba(0, 210, 106, 0.1); color: #00d26a; padding: 8px; border-radius: 8px; margin-right: 12px; display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Frontend</h3>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Bootstrap</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="glass-card reveal" style="display: flex; flex-direction: column; padding: 25px;">
+          <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <div style="background: rgba(0, 210, 106, 0.1); color: #00d26a; padding: 8px; border-radius: 8px; margin-right: 12px; display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Backend</h3>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Node.js</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="glass-card reveal" style="display: flex; flex-direction: column; padding: 25px;">
+          <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <div style="background: rgba(0, 210, 106, 0.1); color: #00d26a; padding: 8px; border-radius: 8px; margin-right: 12px; display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Databases</h3>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="tech-pill">Mongo DB</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">Supabase</span>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="glass-card reveal-right" style="display: flex; flex-direction: column; padding: 25px;">
+          <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <div style="background: rgba(0, 210, 106, 0.1); color: #00d26a; padding: 8px; border-radius: 8px; margin-right: 12px; display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Programming Languages</h3>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">C++</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;" class="reveal-zoom">
+        <a href="about.html#technical-skills" class="btn btn-secondary" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid rgba(255, 255, 255, 0.1);">View All Skills &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Showcase -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">PROJECTS</span>
+        <h2 class="section-title">Featured Innovations</h2>
+        <p class="section-subtitle">Explore selected IoT hardware systems, Android malware detectors, and web platforms.</p>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- ================= JAGRUTHI ================= -->
+        <article class="project-card reveal" data-category="IoT Android">
+          <div class="project-image">
+            <img src="assets/projects/jagruthi.png" alt="Jagruthi" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-category">IoT</span>
+              <span class="project-status">Social Impact</span>
+            </div>
+            <h3>Jagruthi</h3>
+            <p>
+              An intelligent women safety system combining a mobile application
+              and IoT wearable for emergency assistance and communication.
+            </p>
+            <div class="project-tags">
+              <span>ESP32</span>
+              <span>GPS</span>
+              <span>GSM</span>
+              <span>LoRa</span>
+              <span>Supabase</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= APK GUARD ================= -->
+        <article class="project-card reveal" data-category="Cybersecurity Android">
+          <div class="project-image">
+            <img src="assets/projects/apkguard.png" alt="APK Guard" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-category">Cybersecurity</span>
+              <span class="project-status">Security</span>
+            </div>
+            <h3>APK Guard</h3>
+            <p>
+              An Android APK risk analysis and threat reporting system that
+              helps users identify potentially malicious applications before
+              installation.
+            </p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Android</span>
+              <span>Supabase</span>
+              <span>MobSF</span>
+              <span>React.js</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= RIPPLE ================= -->
+        <article class="project-card reveal" data-category="Web">
+          <div class="project-image">
+            <img src="assets/projects/ripple.png" alt="Ripple" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-category">Web</span>
+              <span class="project-status">Finance</span>
+            </div>
+            <h3>Ripple</h3>
+            <p>
+              A simple and intuitive expense tracking web application for
+              recording, organizing, and understanding personal spending.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Google Sheets</span>
+              <span>Apps Script</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/GuruB-Codes" target="_blank" rel="noopener" class="project-btn">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;" class="reveal">
+        <a href="projects.html" class="btn btn-primary">View All Projects &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="work-experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Work <span style="color: #00d26a;">Experience</span></h2>
+        <p class="section-subtitle">Building at scale in world-class engineering organizations</p>
+      </div>
+
+      <div class="experience-list" style="max-width: 800px; margin: 0 auto 40px auto; display: flex; flex-direction: column; gap: 20px;">
+        
+        <div class="glass-card reveal" style="padding: 30px; text-align: left;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h3 style="margin: 0; font-size: 1.3rem;">Front End Web Development Internship</h3>
+            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-dim);">Aug 2025 &ndash; Sep 2025</span>
+          </div>
+          <div style="color: #00d26a; font-weight: 600; margin-bottom: 20px;">Edunet Foundation (IBM SkillsBuild)</div>
+          
+          <ul style="list-style: none; margin: 0; padding-left: 0; color: var(--text-muted); font-size: 0.95rem;">
+            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: #00d26a; position: absolute; left: 0;">•</span> Developed responsive web applications using HTML, CSS, and JavaScript with reusable components.</li>
+            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: #00d26a; position: absolute; left: 0;">•</span> Debugged web applications and improved cross-device compatibility and functionality.</li>
+            <li style="position: relative; padding-left: 20px;"><span style="color: #00d26a; position: absolute; left: 0;">•</span> Implemented interactive UI features and optimized frontend code for improved performance and usability.</li>
+          </ul>
+          <button onclick="openModal('assets/certificates/Edunet_Intern.jpg')" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 15px;">
+            <i class="fas fa-external-link-alt" style="margin-right: 5px;"></i> Certificate
+          </button>
+        </div>
+        
+      </div>
+
+      <div style="text-align: center;" class="reveal-zoom">
+        <a href="achievements.html" class="btn btn-secondary" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid rgba(255, 255, 255, 0.1);">Full Experience &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Latest from the <span style="color: #00d26a;">Blog</span></h2>
+        <p class="section-subtitle">Sharing insights and perspectives on modern software engineering</p>
+      </div>
+
+      <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+        
+        <!-- Card 1 -->
+        <div class="glass-card reveal-left" style="display: flex; flex-direction: column; overflow: hidden; padding: 0;">
+          <div style="height: 180px; background: linear-gradient(45deg, #1a1a2e, #16213e); position: relative; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <span style="position: absolute; top: 15px; left: 15px; background: rgba(0, 0, 0, 0.6); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); color: #fff;">Blog Post</span>
+            <div style="font-size: 3rem; opacity: 0.3;">🔐</div>
+          </div>
+          <div style="padding: 25px;">
+            <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 10px; display: flex; align-items: center; gap: 5px;">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Mar 23, 2026
+            </div>
+            <h3 style="margin: 0 0 10px 0; font-size: 1.25rem;">How I Built Threat Rakshaka: An APK Security Analyzer</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; line-height: 1.5;">From APK permissions to risk scoring and deep analysis with MobSF.</p>
+            <a href="blog.html" style="color: #00d26a; font-weight: 600; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 5px;">Read Article <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card reveal-right" style="display: flex; flex-direction: column; overflow: hidden; padding: 0;">
+          <div style="height: 180px; background: linear-gradient(45deg, #0f2027, #203a43); position: relative; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <span style="position: absolute; top: 15px; left: 15px; background: rgba(0, 0, 0, 0.6); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); color: #fff;">Blog Post</span>
+            <div style="font-size: 3rem; opacity: 0.3;">🌐</div>
+          </div>
+          <div style="padding: 25px;">
+            <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 10px; display: flex; align-items: center; gap: 5px;">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Mar 18, 2026
+            </div>
+            <h3 style="margin: 0 0 10px 0; font-size: 1.25rem;">Building Jagruthi: An IoT-Based Women Safety System</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; line-height: 1.5;">How ESP32, GPS, GSM and LoRa can work together for emergency communication.</p>
+            <a href="blog.html" style="color: #00d26a; font-weight: 600; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 5px;">Read Article <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center;" class="reveal-zoom">
+        <a href="blog.html" class="btn btn-secondary" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid rgba(255, 255, 255, 0.1);">View All Posts &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="section" style="padding-top: 40px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="glass-card reveal-zoom" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 60px 40px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2;">
+          Let's Build Something<br>
+          <span style="color: #00d26a;">Amazing</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6;">
+          I'm always open to discussing new opportunities, interesting projects, or ways to contribute to your team's success.
+        </p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary" style="background: #00d26a; color: #111; font-weight: 600; padding: 12px 28px; border: none; box-shadow: 0 4px 15px rgba(0, 210, 106, 0.3);">Get In Touch &rarr;</a>
+          <a href="mailto:gurulingappa@example.com" class="btn btn-secondary" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid rgba(255, 255, 255, 0.1); padding: 12px 28px; text-transform: none; letter-spacing: 0;">gurulingappa@example.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div id="certModal" class="modal" onclick="closeModal()">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-dot"></span> Gurulingappa
+          </a>
+          <p>Computer Science Engineering Student &amp; Full Stack Developer crafting intuitive Apple-grade digital experiences.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/gurulingappa" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/gurulingappa" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Status</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 12px;">🟢 Available for Engineering Internships &amp; Collaborative Projects.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Gurulingappa. Made with ❤️ and Vanilla Web Technologies.</div>
+        <button id="back-to-top" class="back-to-top-btn" title="Back to Top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Controllers -->
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/project-filter.js"></script>
+  <script src="js/github.js"></script>
+</body>
+</html>
