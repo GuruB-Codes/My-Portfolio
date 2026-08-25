@@ -1,0 +1,72 @@
+[
+  {
+    "id": "jagruthi",
+    "title": "Jagruthi",
+    "subtitle": "Women Safety IoT Project",
+    "category": "IoT",
+    "featured": true,
+    "description": "An advanced IoT-powered personal safety device featuring real-time GPS location tracking, instant SOS distress button alerts via SIM800L, and long-range LoRa mesh emergency signaling connected to a cloud database.",
+    "features": ["GPS Tracking", "Instant SOS", "LoRa Mesh Network", "Live Map Tracking", "Automated Emergency Alerts"],
+    "technologies": ["ESP32", "Arduino", "Supabase", "Flutter", "LoRa", "SIM800L", "GPS"],
+    "image": "assets/projects/jagruthi.svg",
+    "github": "https://github.com/gurulingappa/jagruthi-women-safety",
+    "demo": "https://jagruthi-safety.demo",
+    "date": "2026-03"
+  },
+  {
+    "id": "apk-guard",
+    "title": "APK Guard",
+    "subtitle": "Android Malware Detection System",
+    "category": "AI",
+    "featured": true,
+    "description": "An intelligent security platform analyzing Android APK files using static analysis techniques and machine learning to detect suspicious permission patterns, hidden payloads, and generate threat reports for police dashboards.",
+    "features": ["Static APK Decompilation", "Static Permission Analysis", "Threat Report Generation", "Real-Time Police Dashboard", "Risk Scoring Engine"],
+    "technologies": ["Java", "Python", "Android Studio", "Machine Learning", "PHP", "MySQL"],
+    "image": "assets/projects/apkguard.svg",
+    "github": "https://github.com/gurulingappa/apk-guard-malware-detector",
+    "demo": "https://apk-guard-police.demo",
+    "date": "2025-11"
+  },
+  {
+    "id": "ripple-expense",
+    "title": "Ripple Expense Tracker",
+    "subtitle": "Smart Financial Insights App",
+    "category": "Web",
+    "featured": true,
+    "description": "A modern web application built with Java Spring Boot backend and sleek dark-mode glassmorphic frontend to track income, recurring expenses, budget targets, and generate analytical visual graphs.",
+    "features": ["Category Analytics", "Budget Forecasting", "Export CSV & PDF", "Interactive Charts", "Multi-Currency Support"],
+    "technologies": ["Java", "Spring Boot", "HTML5", "CSS3", "JavaScript", "Supabase", "Chart.js"],
+    "image": "assets/projects/ripple.svg",
+    "github": "https://github.com/gurulingappa/ripple-expense-tracker",
+    "demo": "https://ripple-expense.demo",
+    "date": "2025-08"
+  },
+  {
+    "id": "habit-tracker",
+    "title": "Habit Tracker",
+    "subtitle": "Daily Streak & Goal Motivator",
+    "category": "Android",
+    "featured": false,
+    "description": "An intuitive Android mobile application focused on habit building, daily streak counters, reminder notifications, and customizable goal milestone tracking.",
+    "features": ["Streak Counters", "Smart Notifications", "Progress Milestones", "Dark Mode UI", "Offline Data Sync"],
+    "technologies": ["Java", "Android Studio", "SQLite", "Firebase"],
+    "image": "assets/projects/habit.svg",
+    "github": "https://github.com/gurulingappa/habit-tracker-android",
+    "demo": "https://habit-tracker.demo",
+    "date": "2025-05"
+  },
+  {
+    "id": "portfolio-website",
+    "title": "Award-Winning Developer Portfolio",
+    "subtitle": "Apple-Inspired Frontend Showcase",
+    "category": "Web",
+    "featured": true,
+    "description": "A high-performance, award-winning personal website crafted with pure native HTML5, CSS3, and Vanilla JavaScript featuring custom particle systems, smooth glassmorphism, and responsive design.",
+    "features": ["Custom Canvas Particles", "Glassmorphism UI", "Dynamic JSON Fetching", "Interactive Cursor", "100% Native Code"],
+    "technologies": ["HTML5", "CSS3", "Vanilla JS", "JSON"],
+    "image": "assets/projects/portfolio.svg",
+    "github": "https://github.com/gurulingappa/gurulingappa-portfolio",
+    "demo": "https://gurulingappa.dev",
+    "date": "2026-07"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "username": "gurulingappa",
+  "name": "Gurulingappa",
+  "bio": "Computer Science Engineering Student | Java Full Stack | IoT | AI",
+  "followers": 142,
+  "following": 38,
+  "publicRepos": 28,
+  "totalContributions": 684,
+  "pinnedRepos": [
+    {
+      "name": "jagruthi-women-safety",
+      "description": "ESP32 & LoRa based women emergency safety wearable with instant SOS & live GPS map tracking.",
+      "language": "C++ / Flutter",
+      "stars": 48,
+      "forks": 12,
+      "url": "https://github.com/gurulingappa/jagruthi-women-safety"
+    },
+    {
+      "name": "apk-guard-malware-detector",
+      "description": "Android APK static analysis tool powered by machine learning pattern detection.",
+      "language": "Java / Python",
+      "stars": 36,
+      "forks": 8,
+      "url": "https://github.com/gurulingappa/apk-guard-malware-detector"
+    },
+    {
+      "name": "ripple-expense-tracker",
+      "description": "Java Spring Boot & PostgreSQL sleek dark mode financial expense tracking dashboard.",
+      "language": "Java / HTML",
+      "stars": 29,
+      "forks": 5,
+      "url": "https://github.com/gurulingappa/ripple-expense-tracker"
+    },
+    {
+      "name": "gurulingappa-portfolio",
+      "description": "Award-winning Apple inspired dark mode portfolio built strictly with Vanilla HTML, CSS, JS.",
+      "language": "JavaScript",
+      "stars": 54,
+      "forks": 15,
+      "url": "https://github.com/gurulingappa/gurulingappa-portfolio"
+    }
+  ],
+  "recentCommits": [
+    {
+      "repo": "gurulingappa/jagruthi-women-safety",
+      "message": "feat: optimized LoRa mesh node retry strategy for high range transmission",
+      "date": "2 hours ago"
+    },
+    {
+      "repo": "gurulingappa/gurulingappa-portfolio",
+      "message": "style: upgraded Apple glassmorphism styling & canvas particles performance",
+      "date": "Yesterday"
+    },
+    {
+      "repo": "gurulingappa/apk-guard-malware-detector",
+      "message": "refactor: updated static permission signature matcher ruleset",
+      "date": "3 days ago"
+    }
+  ],
+  "languages": [
+    { "name": "Java", "percentage": 38, "color": "#b07219" },
+    { "name": "C++ / Embedded", "percentage": 26, "color": "#f34b7d" },
+    { "name": "JavaScript / Web", "percentage": 22, "color": "#f1e05a" },
+    { "name": "Python", "percentage": 14, "color": "#3572A5" }
+  ]
+}

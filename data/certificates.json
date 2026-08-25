@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cert-1",
+    "title": "Java Full Stack Development",
+    "organization": "Oracle Certified Professional",
+    "date": "2025-12",
+    "credentialId": "ORC-JFS-892410",
+    "image": "assets/certificates/java_cert.svg",
+    "verifyUrl": "https://oracle.com/cert/verify/892410",
+    "skills": ["Java", "Spring Boot", "REST APIs", "SQL"]
+  },
+  {
+    "id": "cert-2",
+    "title": "IoT & Embedded Systems Architect",
+    "organization": "IEEE Skill Academy",
+    "date": "2025-09",
+    "credentialId": "IEEE-IOT-771204",
+    "image": "assets/certificates/iot_cert.svg",
+    "verifyUrl": "https://ieee.org/cert/verify/771204",
+    "skills": ["ESP32", "Arduino", "LoRaWAN", "Sensors", "Hardware Design"]
+  },
+  {
+    "id": "cert-3",
+    "title": "AI & Machine Learning Foundations",
+    "organization": "DeepLearning.AI",
+    "date": "2025-06",
+    "credentialId": "DLAI-ML-443912",
+    "image": "assets/certificates/ai_cert.svg",
+    "verifyUrl": "https://coursera.org/verify/443912",
+    "skills": ["Python", "Machine Learning", "Data Analysis", "Neural Networks"]
+  },
+  {
+    "id": "cert-4",
+    "title": "Full Stack Web Engineering",
+    "organization": "Meta Engineering",
+    "date": "2025-03",
+    "credentialId": "META-WEB-551029",
+    "image": "assets/certificates/web_cert.svg",
+    "verifyUrl": "https://meta.com/credentials/551029",
+    "skills": ["HTML5", "CSS3", "JavaScript ES6+", "UI/UX Architecture"]
+  }
+]

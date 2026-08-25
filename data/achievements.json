@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ach-1",
+    "title": "1st Winner - PROTONEX 2026",
+    "organization": "National Innovation Hackathon",
+    "date": "2026-02",
+    "role": "Team Lead & Embedded Hardware Developer",
+    "description": "Secured First Place out of 150+ competing teams for engineering 'Jagruthi', a multi-node IoT mesh emergency system with automated location triangulation and cloud emergency notification system.",
+    "category": "Hackathon Winner",
+    "badge": "🏆 1st Prize",
+    "technologies": ["ESP32", "LoRa", "Supabase", "Flutter"]
+  },
+  {
+    "id": "ach-2",
+    "title": "Winner - NammaSuraksha 2.0",
+    "organization": "State Level Public Safety Innovation Challenge",
+    "date": "2025-11",
+    "role": "Full Stack & AI Developer",
+    "description": "Awarded Best Solution in Public Safety category for creating 'APK Guard', an automated Android malware detection pipeline with police dashboard visualizer.",
+    "category": "Hackathon Winner",
+    "badge": "🥇 Winner",
+    "technologies": ["Java", "Python", "Android Security", "PHP", "MySQL"]
+  },
+  {
+    "id": "ach-3",
+    "title": "Winner - PES University Hackathon",
+    "organization": "PES University Technical Fest",
+    "date": "2025-08",
+    "role": "Backend Lead",
+    "description": "Developed a real-time smart expense tracking algorithm and scalable REST microservice architecture under 24 hours.",
+    "category": "Hackathon Winner",
+    "badge": "🥇 1st Rank",
+    "technologies": ["Java", "Spring Boot", "SQL", "HTML5/CSS3"]
+  },
+  {
+    "id": "ach-4",
+    "title": "Top Open Source Contributor",
+    "organization": "Hacktoberfest & IoT Open Hardware",
+    "date": "2025-10",
+    "role": "Contributor",
+    "description": "Authored and merged over 45+ pull requests across open-source ESP32 firmware libraries and Java utility repositories.",
+    "category": "Open Source",
+    "badge": "⭐ Star Contributor",
+    "technologies": ["Git", "GitHub", "C++", "Java"]
+  }
+]

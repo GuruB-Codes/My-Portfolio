@@ -1,0 +1,29 @@
+[
+  {
+    "id": "blog-1",
+    "title": "Building Long-Range Mesh Emergency Networks with ESP32 & LoRa",
+    "excerpt": "A deep technical dive into how long-range radio protocol (LoRa) can transmit life-saving GPS coordinates without cellular network reliance during emergencies.",
+    "date": "2026-03-15",
+    "readTime": "6 min read",
+    "category": "IoT & Hardware",
+    "url": "#"
+  },
+  {
+    "id": "blog-2",
+    "title": "Decompiling & Analyzing Suspicious Android APKs with Java & Static Rules",
+    "excerpt": "Learn how security researchers inspect manifest permissions, DEX bytecode signatures, and hidden background services to identify malicious Android apps.",
+    "date": "2025-12-10",
+    "readTime": "8 min read",
+    "category": "Cybersecurity & AI",
+    "url": "#"
+  },
+  {
+    "id": "blog-3",
+    "title": "Architecting Clean REST APIs with Java Spring Boot and Supabase",
+    "excerpt": "Best practices for building robust enterprise web applications using Spring Boot microservices with real-time Supabase PostgreSQL integration.",
+    "date": "2025-09-22",
+    "readTime": "5 min read",
+    "category": "Full Stack Dev",
+    "url": "#"
+  }
+]
