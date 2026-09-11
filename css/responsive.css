@@ -276,7 +276,9 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   }
 
   .project-image {
-    height: clamp(200px, 50vw, 260px);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
   .project-content {
