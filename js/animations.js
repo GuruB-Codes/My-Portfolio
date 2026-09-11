@@ -73,8 +73,10 @@ function initScrollReveals() {
   revealElements.forEach(el => observer.observe(el));
 }
 
-// 3D Tilt Card Hover Effect
+// 3D Tilt Card Hover Effect (Desktop with pointer only)
 function initTiltCards() {
+  if (window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+
   const cards = document.querySelectorAll('.tilt-card, .glass-card');
 
   cards.forEach(card => {
@@ -128,8 +130,10 @@ function initCounters() {
   counterElements.forEach(el => observer.observe(el));
 }
 
-// Magnetic Buttons
+// Magnetic Buttons (Desktop with pointer only)
 function initMagneticButtons() {
+  if (window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+
   const btns = document.querySelectorAll('.btn-magnetic');
 
   btns.forEach(btn => {

@@ -18,15 +18,14 @@ function runProjectFilterInit() {
       button.classList.add("active");
 
       projectCards.forEach(card => {
-
-        const categories = card.dataset.category.split(" ");
+        const categoryData = card.dataset.category || "";
+        const categories = categoryData.trim().split(/\s+/);
 
         if (filter === "all" || categories.includes(filter)) {
-          card.style.display = "block";
+          card.style.display = "";
         } else {
           card.style.display = "none";
         }
-
       });
     });
   });

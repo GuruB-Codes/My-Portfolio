@@ -223,8 +223,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   pointer-events: none;
 }
@@ -235,6 +237,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: #ffffff;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .text-gradient {
@@ -533,6 +537,39 @@ body.light-theme .nav-link:hover {
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 1002;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.mobile-toggle:focus-visible {
+  outline: 2px solid var(--accent-mint);
+  border-radius: 8px;
+}
+
+/* Mobile Nav Overlay Backdrop */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+}
+
+.nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.nav-open {
+  overflow: hidden;
 }
 
 /* Buttons System */
@@ -676,23 +713,24 @@ body.light-theme .bg-grid-pattern {
 /* Ambient Radial Glow Orbs */
 .ambient-orb {
   position: fixed;
-  width: 600px;
-  height: 600px;
+  width: min(550px, 80vw);
+  height: min(550px, 80vw);
   border-radius: 50%;
   z-index: -1;
   pointer-events: none;
-  filter: blur(110px);
+  filter: blur(100px);
 }
 
 .orb-1 {
-  top: -160px;
-  left: -160px;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -20%);
   background: radial-gradient(circle, rgba(0, 230, 153, 0.22) 0%, rgba(0, 200, 133, 0) 70%);
 }
 
 .orb-2 {
-  bottom: -180px;
-  right: -180px;
+  bottom: 0;
+  right: 0;
   background: radial-gradient(circle, rgba(0, 230, 153, 0.18) 0%, rgba(0, 200, 133, 0) 70%);
 }
 
@@ -1012,7 +1050,7 @@ body:not(.light-theme) .hero-link-btn {
 /* SKILLS SECTION GRID & BARS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 30px;
 }
 
@@ -1300,6 +1338,17 @@ body:not(.light-theme) .hero-link-btn {
 .repo-name {
   font-weight: 700;
   color: var(--accent-cyan);
+}
+
+/* BLOG SECTION GRID */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* CONTACT FORM & DETAILS */

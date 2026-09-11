@@ -36,17 +36,72 @@ function initMobileNav() {
 
   if (!mobileToggle || !navLinks) return;
 
-  mobileToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    const isOpen = navLinks.classList.contains('active');
-    mobileToggle.innerHTML = isOpen ? '✕' : '☰';
+  // Create or select backdrop overlay
+  let navOverlay = document.querySelector('.nav-overlay');
+  if (!navOverlay) {
+    navOverlay = document.createElement('div');
+    navOverlay.className = 'nav-overlay';
+    document.body.appendChild(navOverlay);
+  }
+
+  function closeMenu() {
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    mobileToggle.innerHTML = '☰';
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
+
+  function openMenu() {
+    navLinks.classList.add('active');
+    navOverlay.classList.add('active');
+    mobileToggle.innerHTML = '✕';
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  }
+
+  function toggleMenu() {
+    if (navLinks.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+
+  mobileToggle.setAttribute('aria-expanded', 'false');
+  mobileToggle.setAttribute('aria-label', 'Toggle Navigation Menu');
+
+  mobileToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
   });
 
+  navOverlay.addEventListener('click', closeMenu);
+
+  // Close menu on navigation link click
   links.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      mobileToggle.innerHTML = '☰';
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !mobileToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close menu on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  // Reset menu on resize to desktop view
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 991 && navLinks.classList.contains('active')) {
+      closeMenu();
+    }
   });
 }
 
