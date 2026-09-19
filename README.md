@@ -25,7 +25,7 @@ certifications, experience, and contact details.
 
 ## Live Portfolio
 
-[Visit My Portfolio](https://gurub-codes.github.io/My-Portfolio/)
+[Visit My Portfolio](gurulingappa.netlify.app)
 
 ## Author
 

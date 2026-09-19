@@ -108,20 +108,7 @@ function initCounters() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const target = parseInt(el.getAttribute('data-target') || '0', 10);
-        let current = 0;
-        const increment = Math.ceil(target / 40);
-
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            el.textContent = target;
-            clearInterval(timer);
-          } else {
-            el.textContent = current;
-          }
-        }, 30);
-
+        animateCounterElement(el);
         observer.unobserve(el);
       }
     });
@@ -129,6 +116,42 @@ function initCounters() {
 
   counterElements.forEach(el => observer.observe(el));
 }
+
+function animateCounterElement(el, customTarget) {
+  const target = customTarget !== undefined ? customTarget : parseInt(el.getAttribute('data-target') || '0', 10);
+  let current = parseInt(el.textContent, 10) || 0;
+  if (current === target && el.hasAttribute('data-animated')) return;
+
+  const diff = Math.abs(target - current);
+  const increment = Math.max(1, Math.ceil(diff / 40));
+  const isUp = target >= current;
+
+  if (el._counterInterval) clearInterval(el._counterInterval);
+
+  el._counterInterval = setInterval(() => {
+    if (isUp) {
+      current += increment;
+      if (current >= target) {
+        el.textContent = target;
+        clearInterval(el._counterInterval);
+        el.setAttribute('data-animated', 'true');
+      } else {
+        el.textContent = current;
+      }
+    } else {
+      current -= increment;
+      if (current <= target) {
+        el.textContent = target;
+        clearInterval(el._counterInterval);
+        el.setAttribute('data-animated', 'true');
+      } else {
+        el.textContent = current;
+      }
+    }
+  }, 30);
+}
+
+window.animateCounterElement = animateCounterElement;
 
 // Magnetic Buttons (Desktop with pointer only)
 function initMagneticButtons() {
